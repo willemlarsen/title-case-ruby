@@ -11,5 +11,8 @@ describe('title_case') do
   it('lowercases a word in mixed cases before capitalizing it') do
     expect(title_case("HeLlO")).to eq('Hello')
   end
+  it('works for multiple words') do
+    expect(title_case("HELLO THERE")).to eq('Hello There')
+  end
 end
 
