@@ -14,5 +14,8 @@ describe('title_case') do
   it('works for multiple words') do
     expect(title_case("HELLO THERE")).to eq('Hello There')
   end
+  it('ignores words of two characters or less') do
+    expect(title_case("hello to you")).to eq("Hello to You")
+  end
 end
 
